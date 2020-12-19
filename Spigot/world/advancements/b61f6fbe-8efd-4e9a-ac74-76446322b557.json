@@ -1,0 +1,29 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2020-12-19 10:57:22 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/paper": {
+    "criteria": {
+      "has_reeds": "2020-12-19 10:57:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/sugar_from_sugar_cane": {
+    "criteria": {
+      "has_reeds": "2020-12-19 10:57:50 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:desert_hills": "2020-12-19 10:56:58 +0100",
+      "minecraft:desert": "2020-12-19 10:56:47 +0100",
+      "minecraft:beach": "2020-12-19 10:56:23 +0100"
+    },
+    "done": false
+  },
+  "DataVersion": 2230
+}
