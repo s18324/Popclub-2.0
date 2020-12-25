@@ -3,7 +3,7 @@ mcMMO alchemy:
 		Recipe: honey comb, bottles
 		Requirements: low level alchemy / no requirements (???)
 		Description:
-			Turns to bottle of honey when dropped, put in container (except a			brewing stand), etc. Doesn't stack.
+			Turns to bottle of honey when dropped, put in container (except a brewing stand), etc. Doesn't stack.
 			Inflicts:
 				wither for a long time, for example 6-11min
 				regeneration for 1min, with strength equal to wither
