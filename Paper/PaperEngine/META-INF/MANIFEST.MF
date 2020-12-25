@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Launcher-Agent-Class: io.papermc.paperclip.Agent
+Built-By: jenkins
+Multi-Release: true
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_252
+Main-Class: io.papermc.paperclip.Paperclip
+

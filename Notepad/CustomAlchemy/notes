@@ -1,0 +1,3 @@
+McMMOItemSpawnEvent.class   here we can spawn item when brewing is done in case of plan B, when we fail with full brewing recipe
+
+../com.gmail.nossr50/skills/alchemy    alchemy files
