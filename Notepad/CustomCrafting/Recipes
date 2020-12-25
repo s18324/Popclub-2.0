@@ -1,0 +1,23 @@
+mcMMO alchemy:
+	Bottle of boiling honey
+		Recipe: honey comb, bottles
+		Requirements: low level alchemy / no requirements (???)
+		Description:
+			Turns to bottle of honey when dropped, put in container (except a			brewing stand), etc. Doesn't stack.
+			Inflicts:
+				wither for a long time, for example 6-11min
+				regeneration for 1min, with strength equal to wither
+				speed I for 30s
+				health boost I (+2 hearts) for 1min
+				kills if the user still under effects from this potion
+	Slime in a bottle
+		Recipe: ??? + bottle of boiling honey
+		Requirements: high level alchemy / low level alchemy (??? - depending on balance)
+		Description: Can be crafted into a slime ball, doesn't use the bottle.
+	???
+		Recipe: red mushroom, awkward potion
+		Requirements: alchemy 50
+		Description:
+			Inflicts:
+				invisibility for 3mins
+				glowing for 1min after 2mins

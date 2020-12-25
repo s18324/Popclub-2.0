@@ -1,0 +1,38 @@
+name: TownyBattle
+api-version: 1.15
+depend: [Towny]
+
+Description: Addon for Towny
+			 Adds ability for towns to siege other towns
+			 Adds ability for towns to battle against other towns
+			 Wars between nations not compatible with this plugin
+
+Siege Functionality:
+- Only the mayor can /t siege another town. If the attackig town is in a nation and wins the siege, the sieged town kicks all current residents and the sieging mayor chooses a new mayor from his nation (sends invite). He can choose himself, in which case he has to choose the mayor of the sieging town. He has to choose the new mayor in a time equal to the safety timer granted upon creating a town; Past that time the town is disbanded without refund. The overtaken town gets one free rename (up to 1, can't stack if overtaken many times). The kicked residents get a safety timer equal to the duration of the safety timer for new players.
+- A town can siege up to 1 other town at a time.
+- If town A is sieging town B, town C can siege town A. Town C can't siege town B.
+- Sieging is not available only when under or during a siege.
+- Break/Place is permanently off. Itemuse/Switch is permanently on.
+- Sieging is possible regardless of the availability of sieged town's residents.
+
+Siege mechanics:
+- General idea: Location dependent. Sieging a town further away has a significant impact on gameplay. There is a range to /t siege.
+- General idea: Attackers try to infiltrate the attacked town. Not capture the flag. Possibly capture the point. Possibly original towny war mechanics.
+- ???
+
+Battle Functionality:
+- Only the mayor can /t challenge another town's mayor, when they are both online. If the challenged mayor doesn't accept within a day, the challenging mayor's town starts a siege on terms advantageous to the attacking town.
+- The winning town A taxes the losing town B daily for max{25% * B.plotsAmount, 10, 25% * A.plotsAmount} for 10 days (this will unincentivise strong towns to attack small ones, as small sums of gold won't be interesting for them). If the losing town can't pay, it goes into debt until payed off and can't buy plots (town A gets money when B pays).
+- Losing town can still be sieged, but the winning town can only choose to be a defender for the losing town. If the losing town loses the siege, taxation stops and the debt is nullified.
+
+Battle mechanics:
+- The attacking mayor chooses a 3x3, 4x4 or 5x5 chunk area by right-clicking a banner in the middle chunk. That area becomes non-pvp for the duration of the battle invite, and the attacked mayor and other residents can teleport to that banner with a channel duration of 30s (so it can't be exploited by friendly towns to create tp points). If the attacked mayor accepts, the battle starts. Battles last 1,5 hours.
+- All players in the battleground keep their inventory on death and respawn in their town. They can instantly teleport to the banner with a command once per life.
+- Build/Break/Switch is OFF, Itemuse is ON. PvP, fire, explosions, and mobs are ON.
+- Pvp mode is on for the duration of the battle, so logging off results in death and command teleportation is disabled.
+- If a player leaves the battleground for more than 7 seconds, he loses a life.
+- Each side starts with lives equal to Ceiling[5 * (A.numOfResidents + B.numOfResidents) / 2]
+- The battle is won if either:
+	- One side surrenders by a surrender vote. (is this good? - creates toxicity in LoL)
+	- Time runs out. The winner is decided my most remaining lives. If lives are equal, the attackers win.
+	- The other side loses all the lives.

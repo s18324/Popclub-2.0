@@ -1,0 +1,16 @@
+name: mcMMOadditions
+api-version: 1.15
+depend: [mcMMO]
+
+
+
+features:
+ + brewing slime from honey bottles:
+   Requirements: Alchemy level 750 (can change, but generally high)
+   Ingredients: Bottle of honey
+   Catalyst: Sugar/Blaze Powder/???
+ ? implement upgraded alchemy station for brewing items past level 1000
+   for example brewing stand on a magma block for specialised alchemy
+   	           brewing stand on top of lava for items requireing high temperatures
+ ? implement upgrades for all skills, that work past level 1000
+   possibly make it so these upgrades have to be discovered
